@@ -108,7 +108,7 @@ VerifyButton.MouseButton1Down:connect(function()
 
 		GUI.Parent = nil
 
-loadstring(game:HttpGet('https://freenote.biz/raw/oEqiZLeB1D'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PVOwner/ShadowXTest/main/Script.lua'))()
 
 	end
 end)
