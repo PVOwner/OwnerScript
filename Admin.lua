@@ -108,7 +108,7 @@ VerifyButton.MouseButton1Down:connect(function()
 
 		GUI.Parent = nil
 
-loadstring(game:HttpGet('https://pastebin.com/raw/S9bqkifa'))()
+loadstring(game:HttpGet('https://freenote.biz/raw/oEqiZLeB1D'))()
 
 	end
 end)
