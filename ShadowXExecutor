@@ -1,4 +1,4 @@
-local ShadowXreal = Instance.new("ScreenGui")
+local ShadowX = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local bar = Instance.new("Frame")
 local Close = Instance.new("TextButton")
@@ -27,7 +27,10 @@ local select = Instance.new("Frame")
 local dex = Instance.new("TextButton")
 local esp = Instance.new("TextButton")
 local spy = Instance.new("TextButton")
+local dumper = Instance.new("TextButton")
 local dexm = Instance.new("TextButton")
+local na = Instance.new("TextButton")
+local sx = Instance.new("TextButton")
 local desc = Instance.new("Frame")
 local descri = Instance.new("TextLabel")
 local title_3 = Instance.new("TextLabel")
@@ -40,12 +43,12 @@ local injected = false
 
 
 
-ShadowXreal.Name = "Shadow X"
-ShadowXreal.Parent = game.CoreGui
-ShadowXreal.ResetOnSpawn = false
+ShadowX.Name = "Shadow X"
+ShadowX.Parent = game.CoreGui
+ShadowX.ResetOnSpawn = false
 
 MainFrame.Name = "MainFrame"
-MainFrame.Parent = ShadowXreal
+MainFrame.Parent = ShadowX
 MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 MainFrame.BorderSizePixel = 0
@@ -73,7 +76,7 @@ Close.Text = "X"
 Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextSize = 14.000
 Close.MouseButton1Click:Connect(function()
-    ShadowXreal:Destroy()
+    ShadowX:Destroy()
 end)
 
 ImageLabel.Parent = MainFrame
@@ -335,7 +338,7 @@ title_2.Image = "http://www.roblox.com/asset/?id=7641125882"
 title_2.ImageRectSize = Vector2.new(138, 167)
 
 scripthub_2.Name = "scripthub"
-scripthub_2.Parent = ShadowXreal
+scripthub_2.Parent = ShadowX
 scripthub_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 scripthub_2.BorderSizePixel = 0
 scripthub_2.Position = UDim2.new(0.433135211, 0, 0.502979755, 0)
@@ -365,7 +368,7 @@ dex.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
 dex.BackgroundTransparency = 1.000
 dex.BorderColor3 = Color3.fromRGB(0, 0, 49)
 dex.BorderSizePixel = 0
-dex.Position = UDim2.new(0.0121960752, 0, -1.49011612e-08, 0)
+dex.Position = UDim2.new(0.0121960752, 0, 0.01, 0)
 dex.Size = UDim2.new(0, 80, 0, 18)
 dex.Font = Enum.Font.SourceSans
 dex.Text = " Dex"
@@ -383,7 +386,7 @@ esp.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
 esp.BackgroundTransparency = 1.000
 esp.BorderColor3 = Color3.fromRGB(0, 0, 49)
 esp.BorderSizePixel = 0
-esp.Position = UDim2.new(0.0121960752, 0, 0.0681818053, 0)
+esp.Position = UDim2.new(0.0121960752, 0, 0.06, 0)
 esp.Size = UDim2.new(0, 80, 0, 18)
 esp.Font = Enum.Font.SourceSans
 esp.Text = " Unnamed ESP"
@@ -401,7 +404,7 @@ spy.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
 spy.BackgroundTransparency = 1.000
 spy.BorderColor3 = Color3.fromRGB(0, 0, 49)
 spy.BorderSizePixel = 0
-spy.Position = UDim2.new(0.0121960752, 0, 0.136363626, 0)
+spy.Position = UDim2.new(0.0121960752, 0, 0.11, 0)
 spy.Size = UDim2.new(0, 80, 0, 18)
 spy.Font = Enum.Font.SourceSans
 spy.Text = " Remote Spy"
@@ -419,7 +422,7 @@ dumper.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
 dumper.BackgroundTransparency = 1.000
 dumper.BorderColor3 = Color3.fromRGB(0, 0, 49)
 dumper.BorderSizePixel = 0
-dumper.Position = UDim2.new(0.0121960752, 0, 0.136363626, 0)
+dumper.Position = UDim2.new(0.0121960752, 0, 0.16, 0)
 dumper.Size = UDim2.new(0, 80, 0, 18)
 dumper.Font = Enum.Font.SourceSans
 dumper.Text = " Map Saver"
@@ -437,7 +440,7 @@ dexm.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
 dexm.BackgroundTransparency = 1.000
 dexm.BorderColor3 = Color3.fromRGB(0, 0, 49)
 dexm.BorderSizePixel = 0
-dexm.Position = UDim2.new(0.0121960752, 0, 0.204545438, 0)
+dexm.Position = UDim2.new(0.0121960752, 0, 0.21, 0)
 dexm.Size = UDim2.new(0, 80, 0, 18)
 dexm.Font = Enum.Font.SourceSans
 dexm.Text = " Dex Mobile"
@@ -455,7 +458,7 @@ na.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
 na.BackgroundTransparency = 1.000
 na.BorderColor3 = Color3.fromRGB(0, 0, 49)
 na.BorderSizePixel = 0
-na.Position = UDim2.new(0.0121960752, 0, 0.0681818053, 0)
+na.Position = UDim2.new(0.0121960752, 0, 0.26, 0)
 na.Size = UDim2.new(0, 80, 0, 18)
 na.Font = Enum.Font.SourceSans
 na.Text = " Nameless Admin"
@@ -473,7 +476,7 @@ sx.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
 sx.BackgroundTransparency = 1.000
 sx.BorderColor3 = Color3.fromRGB(0, 0, 49)
 sx.BorderSizePixel = 0
-sx.Position = UDim2.new(0.0121960752, 0, 0.0681818053, 0)
+sx.Position = UDim2.new(0.0121960752, 0, 0.31, 0)
 sx.Size = UDim2.new(0, 80, 0, 18)
 sx.Font = Enum.Font.SourceSans
 sx.Text = " Shadow X Admin"
@@ -575,7 +578,7 @@ close.BorderSizePixel = 0
 close.Position = UDim2.new(0.685180664, 0, 0.871106505, 0)
 close.Size = UDim2.new(0, 84, 0, 30)
 close.Font = Enum.Font.Arial
-close.Text = "Close"
+close.Text = "X"
 close.TextColor3 = Color3.fromRGB(255, 255, 255)
 close.TextSize = 14.000
 close.ZIndex = 110
@@ -861,7 +864,7 @@ while true do
             descri.Text = "A version of the popular Dex explorer with patches specifically for Shadow X."
         end
         if scriptselected == "dumper" then
-            descri.Text = "Allows you to save/download the maps."
+            descri.Text = "Save/download the place as a .rbxl file in your workspace folder."
         end
         if scriptselected == "esp" then
             descri.Text = "ESP Made by ic3w0lf using the Drawing API."
